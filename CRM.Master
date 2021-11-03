@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CRM.master.cs" Inherits="CRM_SOFTWARE.CRM" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CRM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server"> 
+<div class="w3-container">
+  <div class="w3-bar w3-black">
+    <a href="#" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Careers</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button">About<i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Mission & Vision</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Team</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Clients</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
